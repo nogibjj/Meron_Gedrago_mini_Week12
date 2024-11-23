@@ -2,13 +2,14 @@
 IMAGE_NAME = app_demo
 DOCKER_ID_USER = merongedrago
 
+
 # Build the Docker image
 build:
 	docker build -t $(IMAGE_NAME) .
 
 # Run the Docker container
 run:
-	docker run -p 5000:5000 $(IMAGE_NAME)
+	docker run -p 8000:80 $(IMAGE_NAME)
 
 # Remove the Docker image
 clean:
